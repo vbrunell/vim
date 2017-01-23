@@ -44,13 +44,14 @@ Plug 'zanglg/nova.vim'
 " ctrl-p for fuzzy file search
 Plug 'ctrlpvim/ctrlp.vim'
 
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 " Initialize plugin system
 call plug#end()
 
-" Set YCM config for C language class completion
-let g:ycm_global_ycm_extra_conf = 'path to .ycm_extra_conf.py'
+" Set YCM config path for C language class completion
+" Just change '~' to the path to your YCM config file
+let g:ycm_global_ycm_extra_conf = '~'
 
 set backspace=2         " backspace in insert mode works like normal editor
 syntax on               " syntax highlighting
@@ -84,11 +85,11 @@ set si
 set lbr
 set tw=500
 
-" 1 tab == 4 spaces
-set tabstop=4
-set shiftwidth=4
+" 1 tab == 3 spaces
+set tabstop=3
+set shiftwidth=3
 set expandtab
-set softtabstop=4
+set softtabstop=3
 set smarttab autoindent
 
 " Show status bar
