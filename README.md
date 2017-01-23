@@ -41,14 +41,15 @@ Information on how to achieve this can be found here: https://github.com/Vallori
 To get up and running fast:
 <ul>
 <li>Create a .ycm_extra_conf.py Python script in your project's root directory.</li>
-<li>Add this to function it:</li>
+<li>Add this to function it:</li></ul>
 ```sh
 def FlagsForFile( filename, **kwargs ):
   return {
     'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
     }
 ```
-<li>Save and close.</li>
-</ul>
+<ul><li>Save and close.</li></ul>
 
 You should now have autocompletion for your C and C++ projects.
+
+
