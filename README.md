@@ -23,7 +23,7 @@ The following packages must be installed first:
 Installing this configuration is easy:
 
 <ul>
-  <li>Clone the repository to your home directory.
+  <li>Clone this repository and copy the .vimrc file to your home directory.
   <li>Open vim.
   <li>Type ':PlugInstall'
   <li>Navigate to ~/.vim/plugged/YouCompleteMe and run: 
