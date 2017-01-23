@@ -12,7 +12,9 @@ The following packages must be installed first:
   <li>vim-plug -- Just clone https://github.com/junegunn/vim-plug to your home directory.
 </ul>
 
-To use it follow these steps:
+<h1>Installation</h1>
+
+Installing this configuration is easy:
 
 <ul>
   <li>Clone the repository to your home directory.
