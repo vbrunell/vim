@@ -1,3 +1,10 @@
+" Automatically install plugins with vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -34,8 +41,16 @@ Plug '~/my-prototype-plugin'
 " Nova Colorscheme
 Plug 'zanglg/nova.vim'
 
+" ctrl-p for fuzzy file search
+Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'Valloric/YouCompleteMe'
+
 " Initialize plugin system
 call plug#end()
+
+" Set YCM config for C language class completion
+let g:ycm_global_ycm_extra_conf = 'path to .ycm_extra_conf.py'
 
 set backspace=2         " backspace in insert mode works like normal editor
 syntax on               " syntax highlighting
@@ -112,9 +127,18 @@ inoremap <Up> <C-o>gk
 noremap ; :
 noremap : ;
 
+" ------------ NERDTree ------------
 " Toggle NERDTree with ctrl+n
 inoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
+" ------------ NERDTree ------------
+
+" ------------ CtrlP -----------
+" Toggle CtrlP
+let g:ctrlp_map = '<c-p>'
+" Ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" ------------ CtrlP -----------
 
 " The wish that grants more wishes: edit vimrc with \ev
 noremap <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
