@@ -36,6 +36,7 @@ call plug#end()
 
 set backspace=2         " backspace in insert mode works like normal editor
 syntax on               " syntax highlighting
+colorscheme desert      " set a colorscheme
 filetype indent on      " activates indenting for files
 
 set number              " line numbers
