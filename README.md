@@ -9,7 +9,9 @@ It contains some useful plugins, like NERDTree, and some handy settings, like au
 The following packages must be installed first:
 
 <ul>
-  <li>vim-plug -- Just clone https://github.com/junegunn/vim-plug to your home directory.
+  <li>vim-plug -- To install run:
+  <ul><li>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</li></ul>
   <li>For YouCompleteMe you will need cmake, clang, and libclang-3.8:
   <ul>
     <li>sudo apt-get install cmake</li>
