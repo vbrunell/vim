@@ -10,12 +10,13 @@ The following packages must be installed first:
 
 <ul>
   <li>vim-plug -- Just clone https://github.com/junegunn/vim-plug to your home directory.
-  <li>For YouCompleteMe you will need: cmake, clang, libclang-3.8
+  <li>For YouCompleteMe you will need cmake, clang, and libclang-3.8:
   <ul>
     <li>sudo apt-get install cmake</li>
     <li>sudo apt-get install clang</li>
     <li>sudo apt-get install libclang-3.8</li>
   </ul>
+  <li>After installing those dependencies, navigate to ~/.vim/plugged/YouCompleteMe and run install.py
 </ul>
 
 <h1>Installation</h1>
