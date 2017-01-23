@@ -4,8 +4,8 @@ This is my customized vim configuration.  It contains some useful plugins, like 
 
 To use it follow these steps:
 
-Clone the repository to your home directory.
-Open vim.
-Type ':PlugInstall'
+<br>Clone the repository to your home directory.
+<br>Open vim.
+<br>Type ':PlugInstall'
 
 All done!
