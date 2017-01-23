@@ -1,4 +1,4 @@
-# vim
+# A lightweight customized vim configuration
 
 This is my customized vim configuration.  
 
