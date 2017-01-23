@@ -14,9 +14,10 @@ The following packages must be installed first:
   <ul>
     <li>sudo apt-get install cmake</li>
     <li>sudo apt-get install clang</li>
-    <li>sudo apt-get install libclang-3.8</li>
+    <li>sudo apt-get install libclang-dev</li>
   </ul>
-  <li>After installing those dependencies, navigate to ~/.vim/plugged/YouCompleteMe and run install.py
+  <li>After installing those dependencies, navigate to ~/.vim/plugged/YouCompleteMe and run: 
+  <ul><li>install.py --clang-completer</li></ul>
 </ul>
 
 <h1>Installation</h1>
