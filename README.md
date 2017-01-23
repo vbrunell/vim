@@ -2,7 +2,7 @@
 
 This is my customized vim configuration.  
 
-<br>It contains some useful plugins, like NERDTree, and some handy settings, like automatically setting a tab to four spaces.
+It contains some useful plugins, like NERDTree, and some handy settings, like automatically setting a tab to four spaces.
 
 To use it follow these steps:
 
