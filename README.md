@@ -42,10 +42,12 @@ To get up and running fast:
 <ul>
 <li>Create a .ycm_extra_conf.py Python script in your project's root directory.</li>
 <li>Add this to function it:</li>
-<code><pre>def FlagsForFile( filename, **kwargs ):
+```sh
+def FlagsForFile( filename, **kwargs ):
   return {
     'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
-    }</pre></code>
+    }
+```
 <li>Save and close.</li>
 </ul>
 
