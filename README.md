@@ -2,7 +2,9 @@
 
 This is my customized vim configuration.  
 
-It contains some useful plugins, like NERDTree, and some handy settings, like automatically setting a tab to four spaces.
+It contains some useful plugins (NERDTree, CtrlP, YCM) and some handy settings and key mappings.
+
+It will give you multiple directory navigation tools and autocompletion.
 
 <h1>Dependencies</h1>
 
