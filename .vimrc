@@ -31,12 +31,20 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 
+" Nova Colorscheme
+Plug 'zanglg/nova.vim'
+
 " Initialize plugin system
 call plug#end()
 
 set backspace=2         " backspace in insert mode works like normal editor
 syntax on               " syntax highlighting
-colorscheme desert      " set a colorscheme
+
+" Color Scheme Setup
+set termguicolors
+colorscheme nova        " set a colorscheme
+set background=dark
+
 filetype indent on      " activates indenting for files
 
 set number              " line numbers
