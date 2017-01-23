@@ -2,7 +2,9 @@
 
 This is my customized vim configuration.  
 
-It contains some useful plugins, like NERDTree, and some handy settings, like automatically setting a tab to four spaces.
+It contains some useful plugins (NERDTree, CtrlP, YCM) and some handy settings and key mappings.
+
+It will give you multiple directory navigation tools and autocompletion.
 
 <h1>Dependencies</h1>
 
@@ -41,12 +43,15 @@ Information on how to achieve this can be found here: https://github.com/Vallori
 To get up and running fast:
 <ul>
 <li>Create a .ycm_extra_conf.py Python script in your project's root directory.</li>
-<li>Add this to function it:</li>
-<code><pre>def FlagsForFile( filename, **kwargs ):
+<li>Add this to function it:</li></ul>
+```sh
+def FlagsForFile( filename, **kwargs ):
   return {
     'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
-    }</pre></code>
-<li>Save and close.</li>
-</ul>
+    }
+```
+<ul><li>Save and close.</li></ul>
 
 You should now have autocompletion for your C and C++ projects.
+
+
