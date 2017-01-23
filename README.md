@@ -10,7 +10,7 @@ The following packages must be installed first:
 
 <ul>
   <li>vim-plug -- Installation instructions here: https://github.com/junegunn/vim-plug
-  <li>For YouCompleteMe you will need cmake, clang, and libclang-3.8:
+  <li>For YouCompleteMe and C-family support you will need cmake, clang, and libclang-3.8:
   <ul>
     <li>sudo apt-get install cmake</li>
     <li>sudo apt-get install clang</li>
@@ -31,3 +31,20 @@ Installing this configuration is easy:
 </ul>
 
 All done!
+
+<h1>Additional Notes</h1>
+
+In order to use C-family autocompletion with YCM, you will need to define compilation flags for YCM to reference.
+
+Information on how to achieve this can be found here: https://github.com/Valloric/YouCompleteMe/blob/master/README.md#c-family-semantic-completion
+
+To get up and running fast:
+<ul>
+<li>Create a .ycm_extra_conf.py Python script in your project's root directory.</li>
+<li>Add this to it:</li>
+<code>def FlagsForFile( filename, **kwargs ):
+  return {
+    'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
+    }</code>
+    <li>Save and close.</li>
+    </ul>
