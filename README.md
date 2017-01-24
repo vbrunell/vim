@@ -33,12 +33,14 @@ All done!
 
 To install and use YCM, you'll need cmake.  In a terminal execute `sudo apt-get install cmake`
 
-Once you've done that, navigate to `~/.vim/plugged/YouCompleteMe` and execute  `install.py --clang-completer`
+Once you've done that, navigate to `~/.vim/plugged/YouCompleteMe` and execute  `install.py`
 
 ### C-family Support
 
 In order to use YCM autocompletion with C and C++, you will need clang v3.8 or later.
 <br>In a terminal window execute: `sudo apt-get install libclang-dev`
+
+Then navigate to `~/.vim/plugged/YouCompleteMe` and execute  `install.py --clang-completer`
 
 You'll also need to define compilation flags for YCM to reference for each project.
 
