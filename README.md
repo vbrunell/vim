@@ -20,9 +20,9 @@ For Neovim or Windows users, instructions are available here: https://github.com
 Installing this configuration is easy:
 
 <ul>
-  <li>Clone this repository and copy the .vimrc file to your home directory
-  <li>Open vim
-  <li>Type :PlugInstall and press enter
+  <li>Clone this repository and copy the .vimrc file to your home directory.
+  <li>Open vim.
+  <li>Type :PlugInstall and press enter.
 </ul>
 
 All done!
