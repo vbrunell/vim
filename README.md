@@ -4,7 +4,7 @@ This is my customized vim configuration.
 
 It contains some useful plugins (NERDTree, CtrlP, YCM) and some handy settings and key mappings.
 
-It will give you multiple directory navigation tools and autocompletion.
+It will give you directory navigation tools, autocompletion, an updated status bar, and more.
 
 <h1>Dependencies</h1>
 
