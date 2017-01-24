@@ -8,7 +8,7 @@ It will give you multiple directory navigation tools and autocompletion.
 
 <h1>Dependencies</h1>
 
-You'll need vim-plug.  To install it in a terminal window execute:
+You'll need vim-plug.  To install it, open a terminal window execute:
 
 `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
