@@ -27,6 +27,8 @@ Installing this configuration is easy:
 
 All done!
 
+(If you want to use YCM, read the next section.)
+
 <h1>YouCompleteMe Dependencies</h1>
 
 To install and use YCM, you'll need cmake.  In a terminal execute `sudo apt-get install cmake`
