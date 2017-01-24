@@ -8,37 +8,39 @@ It will give you multiple directory navigation tools and autocompletion.
 
 <h1>Dependencies</h1>
 
-The following packages must be installed first:
+You'll need vim-plug.  To install it in a terminal window execute:
 
-<ul>
-  <li>vim-plug -- Installation instructions here: https://github.com/junegunn/vim-plug
-  <li>For YouCompleteMe and C-family support you will need cmake, clang, and libclang-3.8:
-  <ul>
-    <li>sudo apt-get install cmake</li>
-    <li>sudo apt-get install clang</li>
-    <li>sudo apt-get install libclang-dev</li>
-  </ul>
-</ul>
+`curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
+For use with Neovim or Windows, instructions are available here: https://github.com/junegunn/vim-plug
 
 <h1>Installation</h1>
 
 Installing this configuration is easy:
 
 <ul>
-  <li>Clone this repository and copy the .vimrc file to your home directory.
-  <li>Open vim.
-  <li>Type ':PlugInstall'
-  <li>Navigate to ~/.vim/plugged/YouCompleteMe and run: 
-    <ul><li>install.py --clang-completer</li></ul>
+  <li>Clone this repository and copy the .vimrc file to your home directory
+  <li>Open vim
+  <li>Type `:PlugInstall` and press enter
 </ul>
 
 All done!
 
-<h1>Additional Notes</h1>
+<h1>YouCompleteMe Dependencies</h1>
 
-In order to use C-family autocompletion with YCM, you will need to define compilation flags for YCM to reference.
+To install and use YCM, you'll need cmake.  In a terminal execute `sudo apt-get install cmake`
 
-Information on how to achieve this can be found here: https://github.com/Valloric/YouCompleteMe/blob/master/README.md#c-family-semantic-completion
+Once you've done that, navigate to `~/.vim/plugged/YouCompleteMe` and execute  `install.py --clang-completer`
+
+### C-family Support
+
+In order to use YCM autocompletion with C and C++, you will need clang v3.8 or later.
+In a terminal window execute `sudo apt-get install libclang-dev`
+
+You'll also need to define compilation flags for YCM to reference for each project.
+
+Information on how to achieve this can be found here: 
+https://github.com/Valloric/YouCompleteMe/blob/master/README.md#c-family-semantic-completion
 
 To get up and running fast:
 <ul>
