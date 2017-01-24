@@ -36,8 +36,7 @@ Once you've done that, navigate to `~/.vim/plugged/YouCompleteMe` and execute  `
 ### C-family Support
 
 In order to use YCM autocompletion with C and C++, you will need clang v3.8 or later.
-
-In a terminal window execute `sudo apt-get install libclang-dev`
+    In a terminal window execute `sudo apt-get install libclang-dev`
 
 You'll also need to define compilation flags for YCM to reference for each project.
 
