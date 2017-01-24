@@ -13,7 +13,7 @@ You'll need vim-plug.  To install it, open a terminal window and execute:
 `curl -fLo ~/.vim/autoload/plug.vim --create-dirs \`
 <br>`https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
-For use with Neovim or Windows, instructions are available here: https://github.com/junegunn/vim-plug
+For Neovim or Windows users, instructions are available here: https://github.com/junegunn/vim-plug
 
 <h1>Installation</h1>
 
