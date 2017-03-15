@@ -22,7 +22,7 @@ Installing this configuration is easy:
 <ul>
   <li>Clone this repository and copy the .vimrc file to your home directory.
   <li>Open vim.
-  <li>Type :PlugInstall and press enter.
+  <li>The plugins should install automagically.  
 </ul>
 
 All done!
